@@ -1,0 +1,19 @@
+n=int(input("Enter the number of terms: "))
+term1=0
+term2=1
+count=0
+if n==1:
+  print("Fibonacci sequence is : ")
+  print(term1)
+elif n<=0:
+  print("Enter valid number")
+else:
+  print("Fibonacci sequence is: ")
+  while count<n:
+    print(term1)
+    termm= term1+term2
+    term1=term2
+    term2=termm
+    count+=1
+
+  
